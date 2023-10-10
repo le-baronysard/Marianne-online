@@ -57,11 +57,13 @@ match option:
         if year != "All":
             temp=temp[temp.Date.dt.year==year]
         top = st.select_slider(label="Select the number of bins",options = [5,10,15,20,25,30,35,40,45,50])
+        temp = temp.loc[:,["Organization Industries","Raised (million €)"]]
         temp.groupby(by="Organization Industries").sum().sort_values(by="Raised (million €)",ascending=False)
+        
         temp  =(temp.groupby(["Organization Industries",pd.cut(temp["Raised (million €)"],bins=[0,1,10,100,100_000])]).count().iloc[:,0].rename({"Organization Name":"Count"},axis=0))
         temp = temp.unstack().reset_index()
         temp.columns = ["Organisation Industries","<1M","1-10M","10-100M",">100M"]
-        temp["tot"]=temp.sum(axis=1)
+        temp["tot"]=temp.iloc[:,1:].sum(axis=1)
         temp.sort_values(by="tot",ascending=False,inplace=True)
         temp = temp.head(top)
         fig, ax = plt.subplots()
