@@ -17,7 +17,6 @@ match option:
         temp = st.session_state["raw_data"].copy()
         temp.set_index("Date", inplace=True)
         temp = temp.loc[:,"Raised (million €)"]
-        st.write(type(temp))
         window = st.selectbox(label="Select a window",options = ["Year","Month","Week"])
 
         #st.write(temp)
