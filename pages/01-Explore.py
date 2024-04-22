@@ -35,7 +35,4 @@ def draw_box():
     st.pyplot(plot.get_figure())
 
 str = st.selectbox("Select a company",options=st.session_state.raw_data["Organization Name"].unique())
-if st.button("Explore",on_click=lookup(str)):
-    st.write("ok")
-else :
-    st.write("Sad")
+st.button("Explore",on_click=lookup(str))

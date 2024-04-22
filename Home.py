@@ -1,14 +1,9 @@
 import streamlit as st
 import time
 
-st.markdown("<h1 style='text-align: center; color: blue;'>Hello Marianne</h1>", unsafe_allow_html=True)
+st.write("Welcome to Marianne Online!")
+st.write("This is the home page of our application.")
 
-st.balloons()
-
-st.write("")
-st.write("Work in progress")
-my_bar = st.progress(0)
-
-for percent_complete in range(100):
-    time.sleep(1)
-    my_bar.progress(percent_complete + 1)
+st.write("Feel free to explore the different features and functionalities.")
+st.write("If you have any questions or need assistance, please don't hesitate to reach out.")
+st.write("Enjoy your experience!")
