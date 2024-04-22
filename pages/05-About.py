@@ -15,6 +15,6 @@ marianne = TeamMember("Marianne", """Mon secteur d'activité est la responsabili
 #aloys = TeamMember("Aloys", "data analyst", "https://www.linkedin.com/in/aloys")
 
 
-st.header("Marianne")
+st.header("Marianne la banane")
 st.image("data/marianne.jpeg", width=200)
 marianne.introduce()
