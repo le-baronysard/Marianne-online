@@ -15,4 +15,4 @@ if not "raw_data" in st.session_state:
 
 st.markdown("## Funding Rounds")
 
-st.dataframe(st.session_state["raw_data"])
+st.dataframe(st.session_state["raw_data"].drop(columns="Transaction Name URL"))
