@@ -7,7 +7,7 @@ col1, col2 = st.columns(2)
 with col1 : 
     st.image("data/marianne.jpeg", width=200)
 with col2 :
-    st.header("Marianne Lahanna")
+    st.header("Marianne Lahana")
     
     st.markdown(""" 
                 Avocate en droit de la santé    
@@ -25,7 +25,7 @@ rassembler les données des entreprises de santé innovantes en
 France concernant notamment leur levée de fonds. Sa thèse
 intitulée « De l’évolution des politiques publiques sur
 l’innovation en santé » est une étude pluridisciplinaire qui
-permet, grâce à l’extraction et l’analyse des données de
+permet, grâce à l’extraction et l’analyse des données 
 récupérées en accès libre sur internet, de mieux comprendre le rôle des pouvoirs publics dans l’accompagnement des
 nouvelles entreprises innovantes. Ce site dédié rassemble ainsi les données de plus de 500
 entreprises de santé et offre une lecture globale des levées de fond opérées de la création
