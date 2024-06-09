@@ -3,3 +3,6 @@
 # Ignore pycache
 *__pycache__/*
 __pycache__/
+
+# Mac Files
+.DS_Store
