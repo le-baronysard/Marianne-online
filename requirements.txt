@@ -1,4 +1,4 @@
-numpy<2
-pandas
-seaborn
-streamlit
+numpy==1.26.4
+pandas==2.2.2
+seaborn==0.13.2
+streamlit==1.34.0
